@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  /* fallback height */
+  min-height: 100vh;
+  /* new small viewport height for modern browsers */
+  min-height: 100svh;
+}
+
+nav {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > div {
+  display: flex;
+}
+
+header {
+  background: #007680;
+}
+
+footer {
+  background: #333f48;
+  /* for footer to stay on bottom */
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-3em {
+  width: auto;
+  height: 3em;
+}
+
+.btn-2em {
+  width: auto;
+  height: 2em;
+}
