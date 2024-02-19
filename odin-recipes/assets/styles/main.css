@@ -7,22 +7,82 @@
 body {
   margin: 0;
   padding: 0;
+}
+
+/* Override character ", ', % = unicode-range: U+0022, U+0027, U+0025; */
+@font-face {
+  font-family: 'Inter OVR';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYMZ1zjpelvA&skey=c491285d6722e4fa&v=v13) format('woff2');
+  unicode-range: U+0022, U+0027, U+0025;
+}
+
+.brand-text {
+  font-family: "Caesar Dressing", Verdana, sans-serif, system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.heading-title,
+.card-title {
+  font-family: "Inter OVR", "Space Grotesk", Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.heading-subtitle {
+  font-family: Inter, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card-category,
+.card-author {
+  font-family: Inter, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: .65rem;
+  letter-spacing: 2px;
+}
+
+.footer-text {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.btn-l {
+  width: auto;
+  height: 4em;
+}
+
+.btn-m {
+  width: auto;
+  height: 3em;
+}
+
+.btn-s {
+  width: auto;
+  height: 2em;
+}
+
+.margin-del {
+  margin: 0;
+}
+
+.padding-del {
+  padding: 0;
+}
+
+.x-center {
   display: flex;
-  flex-direction: column;
-  /* fallback height */
-  min-height: 100vh;
-  /* new small viewport height for modern browsers */
-  min-height: 100svh;
+  align-items: center;
+  justify-content: center;
 }
 
 nav {
   background: #fff;
-  display: flex;
-  justify-content: space-between;
-}
-
-nav > div {
-  display: flex;
 }
 
 header {
@@ -31,19 +91,60 @@ header {
 
 footer {
   background: #333f48;
-  /* for footer to stay on bottom */
-  margin-top: auto;
+}
+
+.card a:link,
+.card a:visited,
+.card a:active {
+  text-decoration: none;
+  color: #333;
+}
+
+/* hover recipe image shadow */
+a:hover .card-media {
+  box-shadow: 0.3125rem 0.3125rem 0 0 #bf0d3e;
+}
+
+/* hover recipe name highlight */
+a:hover .card-title {
+  color: #e8104d;
+  text-decoration: underline;
+  text-decoration-thickness: 69.5%;
+  text-underline-offset: -88%;
+  text-decoration-skip-ink: none;
+}
+
+.card-title .focus {
+  color: #333;
+}
+
+/* page layout */
+.flex-doc {
   display: flex;
   flex-direction: column;
+  /* fallback height */
+  min-height: 100vh;
+  /* new small viewport height for modern browsers */
+  min-height: 100svh;
+}
+
+.flex-doc-bot {
+  /* for footer to stay on bottom */
+  margin-top: auto;
+}
+
+.flex-nav {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.btn-3em {
-  width: auto;
-  height: 3em;
+.flex-nav-menu {
+  display: flex;
 }
 
-.btn-2em {
-  width: auto;
-  height: 2em;
+.flex-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
