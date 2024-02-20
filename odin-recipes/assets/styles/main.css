@@ -154,6 +154,10 @@ footer {
   color: #fff;
 }
 
+#navbar {
+  box-shadow: 0 2px 6px 0 rgb(0 0 0 / 22%);
+}
+
 nav.flex-nav {
   padding: 1.25rem 0.75rem;
 }
@@ -265,6 +269,13 @@ a:hover .card-title {
 
   main {
     margin-bottom: 2rem;
+    margin-top: 89px; /* Size of sticky/fixed header as compensate so it doesn't get hidden */
+  }
+
+  #navbar {
+    position: fixed; /* Make it stick/fixed */
+    width: 100%; /* Full width */
+    transition: 0.3s ease; /* Transition effect when sliding down (and up) */
   }
 
   .grid-hero {
