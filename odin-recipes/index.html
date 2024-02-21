@@ -15,20 +15,22 @@
     <img class="btn-m top-odin" src="../assets/images/icons/odin-icon.svg" alt="Home">
     <h2 class="brand-text margin-del">ODIN RECIPES</h2>
   </a>
-  <div class="flex-nav-menu">
-    <a class="menu-btn x-center" href="">
-      <img class="btn-s" src="../assets/images/icons/ham-burger.svg" alt="Menu">
-    </a>
-<!--     <a class="x-center ui-link" href="../">
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a class="menu-btn x-center icon" href="javascript:void(0);" onclick="myFunction()">
+    <img class="btn-s" src="../assets/images/icons/ham-burger.svg" alt="Menu">
+  </a>
+</nav>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks" class="flex-nav-menu">
+    <a class="x-center ui-link" href="../">
       <img class="btn-s" src="../assets/images/icons/home.svg" alt="TOP Projects">
       <h2 class="margin-del">TOP Projects</h2>
     </a>
     <a class="x-center ui-link" href="https://github.com/reddooh/top-projects/blob/main/README.md ">
       <img class="btn-s" src="../assets/images/icons/information.svg" alt="Info">
       <h2 class="margin-del">About</h2>
-    </a> -->
+    </a>
   </div>
-</nav>
 
 <main>
   <header>
@@ -78,6 +80,17 @@
   </a>
 </footer>
 
+<!-- Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon -->
+  <script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+  </script>
   <script>
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 var prevScrollPos = window.pageYOffset;
