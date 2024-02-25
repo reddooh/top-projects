@@ -44,7 +44,8 @@ body {
   margin: 1rem 0;
 }
 
-.heading-subtitle {
+.heading-subtitle,
+.flex-nav-menu {
   font-family: Inter, Helvetica, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -154,65 +155,36 @@ footer {
   color: #fff;
 }
 
-#navbar {
+nav.flex-nav {
+  padding: 1.25rem 0.75rem;
   box-shadow: 0 2px 6px 0 rgb(0 0 0 / 22%);
 }
 
 /* Style the navigation menu */
 .flex-nav-menu {
   overflow: hidden;
-  background-color: #333;
+  background-color: #bf0d3e;
   position: relative;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
-body #myLinks {
+body #moreLinks {
   display: none;
 }
 
 /* Style navigation menu links */
 .flex-nav-menu a {
-  color: white;
-  /* padding: 14px 16px; */
+  color: #fff;
+  padding: 0.5rem 0.5rem;
   text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-/* Style the hamburger menu */
-.flex-nav-menu a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
+  font-size: 1.35rem;
+  /* display: block; */
 }
 
 /* Add a grey background color on mouse-over */
 .flex-nav-menu a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-@media (min-width: 34em) {
-  header {
-    margin-bottom: 1.625rem;
-  }
-
-  main {
-    margin-bottom: 2rem;
-    margin-top: 89px; /* Size of sticky/fixed header as compensate so it doesn't get hidden */
-  }
-
-  #navbar {
-    position: fixed; /* Make it stick/fixed */
-    width: 100%; /* Full width */
-    transition: 0.3s ease; /* Transition effect when sliding down (and up) */
-  }
-}
-
-nav.flex-nav {
-  padding: 1.25rem 0.75rem;
+  background-color: #e8104d;
+  color: #fff;
 }
 
 .brand-text {
@@ -229,7 +201,9 @@ nav.flex-nav {
   filter: invert(1);
 }
 
-.top-logo {
+.top-logo,
+.home-icon,
+.info-icon {
   filter: invert(1);
 }
 
@@ -282,6 +256,8 @@ a:hover .card-title {
 
 .flex-nav-menu {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .flex-footer {
@@ -315,7 +291,48 @@ a:hover .card-title {
   margin-bottom: 2rem;
 }
 
-@media (min-width: 34em) {
+/* card */
+.flex-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-card-1 > .card-media {
+  width: auto;
+}
+
+.flex-card-2 > .card-media,
+.flex-card-3 > .card-media {
+  width: 100%;
+}
+
+.card-content {
+  padding: 0.9375rem 0;
+}
+
+.card-title {
+  margin: 0;
+}
+
+@media (min-width: 576px) {
+  header {
+    margin-bottom: 1.625rem;
+  }
+
+  main {
+    margin-bottom: 2rem;
+/* sticky nav */
+    /* margin-top: 89px; Add a top margin to avoid content overlay */
+  }
+
+/*   #navbar {
+    position: fixed; Make it stick/fixed
+    width: 100%; Full width
+    top: 0; Position the navbar at the top of the page
+    transition: 0.3s ease; Transition effect when sliding down (and up)
+  } */
+
+/* hero content */
   .grid-hero {
     grid-gap: 1.25rem;
     grid-template-columns: repeat(12, 1fr);
@@ -342,32 +359,8 @@ a:hover .card-title {
   .card:nth-child(3) {
     grid-row: 2 / 3;
   }
-}
 
 /* card */
-.flex-card {
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-card-1 > .card-media {
-  width: auto;
-}
-
-.flex-card-2 > .card-media,
-.flex-card-3 > .card-media {
-  width: 100%;
-}
-
-.card-content {
-  padding: 0.9375rem 0;
-}
-
-.card-title {
-  margin: 0;
-}
-
-@media (min-width: 34em) {
   .flex-card-2,
   .flex-card-3 {
     flex-direction: row;
