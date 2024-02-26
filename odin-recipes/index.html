@@ -16,7 +16,7 @@
     <h2 class="brand-text margin-del">ODIN RECIPES</h2>
   </a>
   <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-  <a class="menu-btn x-center icon" href="javascript:void(0);" onclick="menuClick()">
+  <a class="menu-btn x-center menu-icon" href="javascript:void(0);" onclick="menuClick()">
     <img class="btn-s" src="../assets/images/icons/ham-burger.svg" alt="Menu">
   </a>
 </nav>
@@ -97,10 +97,10 @@ window.onscroll = function() {
 // Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu | bar icon
 function menuClick() {
   var x = document.getElementById("moreLinks");
-  if (x.style.display === "flex") {
+  if (x.style.display === "block") {
     x.style.display = "none";
   } else {
-    x.style.display = "flex";
+    x.style.display = "block";
   }
 }
   </script>

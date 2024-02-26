@@ -27,7 +27,8 @@ body {
 }
 
 .heading-title,
-.card-title {
+.card-title,
+.section-title {
   font-family: "Inter OVR", "Space Grotesk", Helvetica, sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -39,16 +40,16 @@ body {
   margin: 1rem 0 0.5rem;
 }
 
-.subtitle-size {
-  font-size: 1.15rem;
-  margin: 1rem 0;
-}
-
 .heading-subtitle,
 .flex-nav-menu {
   font-family: Inter, Helvetica, sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.subtitle-size {
+  font-size: 1.15rem;
+  margin: 1rem 0;
 }
 
 .card-content {
@@ -114,9 +115,15 @@ body {
 
 .x-center {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 0.25rem;
+}
+
+.y-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ui-link {
@@ -160,6 +167,12 @@ nav.flex-nav {
   box-shadow: 0 2px 6px 0 rgb(0 0 0 / 22%);
 }
 
+/* Style hamburger button */
+.flex-nav .menu-icon:hover {
+  color: #fff;
+  background: #e8104d;
+}
+
 /* Style the navigation menu */
 .flex-nav-menu {
   overflow: hidden;
@@ -175,13 +188,13 @@ body #moreLinks {
 /* Style navigation menu links */
 .flex-nav-menu a {
   color: #fff;
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem 0;
   text-decoration: none;
   font-size: 1.35rem;
   /* display: block; */
 }
 
-/* Add a grey background color on mouse-over */
+/* Add a lighter background color on mouse-over */
 .flex-nav-menu a:hover {
   background-color: #e8104d;
   color: #fff;
@@ -251,12 +264,6 @@ a:hover .card-title {
 .flex-nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-.flex-nav-menu {
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
