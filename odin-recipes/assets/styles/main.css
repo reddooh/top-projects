@@ -146,6 +146,13 @@ a:active.links {
   color: #e8104d;
 }
 
+a:focus-visible {
+  outline-offset: 4px;
+  outline-style: dashed;
+  outline-width: thick;
+  outline-color: gold;
+}
+
 nav {
   background: #fff;
 }
