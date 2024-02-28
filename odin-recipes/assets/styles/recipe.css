@@ -1,0 +1,288 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #333f48;
+}
+
+h2, p,
+.what-is,
+.how-to,
+.flex-intro > p,
+.ingr-container > .section-subtitle,
+.ingr-LI,
+.inst-LI::marker,
+.inst-LI > p {
+  font-family: Inter, Helvetica, sans-serif;
+  font-style: normal;
+}
+
+.ingr-container > .section-title,
+.inst-container > .section-title,
+.notes-container > .section-title {
+  font-family: "Inter OVR", "Space Grotesk", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.title-size {
+  margin: 0.5rem 0 0.5rem;
+}
+
+.flex-hero {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Recipe pic */
+.recipe-media {
+  width: 100%;
+  height: auto;
+}
+/* What recipe */
+.what-is,
+.how-to,
+.flex-intro > p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.flex-intro {
+  background: #FBFBFB;
+  margin-top: 0;
+  padding: 0.5rem 1rem;
+}
+.what-is,
+.how-to {
+  font-weight: bold;
+  font-size: 1.375rem;
+  line-height: 1.12;
+  padding-bottom: 1rem;
+}
+.flex-intro > p {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+.flex-intro > p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.flex-intro > p:last-child {
+  margin-bottom: 0;
+}
+
+/* Recipe guide */
+/* Heading text alignment */
+.ingr-container > .section-title,
+.inst-container > .section-title,
+.notes-container > .section-title {
+  text-align: center;
+}
+
+.notes-UL,
+.notes-LI:is(:first-child) > p {
+  margin-top: 0;
+}
+
+.inst-LI:is(:last-child) > p,
+.notes-container > .section-title,
+.notes-LI:is(:last-child) > p {
+  margin-bottom: 0;
+}
+
+.ingr-container,
+.inst-container {
+  padding-top: 0.5rem;
+}
+
+/* Make ingredient subheading & bullet counter bold */
+.ingr-container > .section-subtitle,
+.inst-LI::marker, {
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+}
+
+.notes-container > .section-title,
+.notes-UL {
+  color: #000;
+}
+
+/* Ingredients */
+.ingr-container {
+  background: peachpuff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+}
+.ingr-container > .section-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+  font-size: 1.375rem;
+  line-height: 1.12;
+}
+.ingr-container > .section-subtitle {
+  margin-bottom: 0.75rem;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.ingr-UL {
+  margin-top: 0;
+  padding-left: 1.25rem;
+}
+.ingr-UL:not(:last-child) {
+  margin-bottom: 1.875rem;
+}
+.ingr-UL:is(:last-child) {
+  margin-bottom: 0;
+}
+.ingr-LI {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.ingr-LI:is(:last-child) {
+  margin-bottom: 0;
+}
+.ingr-LI::marker {
+  color: #e8104d; /* Change bullet color of List */
+}
+
+/* Instructions */
+.inst-container {
+  background: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.inst-container > .section-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+  font-size: 1.375rem;
+  line-height: 1.12;
+}
+.inst-OL {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 1.25rem;
+}
+.inst-LI {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.inst-LI:is(:last-child) {
+  margin-bottom: 0;
+}
+.inst-LI > p {
+  margin-top: 0.125rem;
+  margin-bottom: 0;
+}
+
+/* Notes */
+.notes-container > .section-title,
+.notes-UL {
+  background: #e7e9ea;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.notes-container {
+  background: #fff;
+}
+.notes-container > .section-title {
+  text-transform: uppercase;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.notes-UL {
+  margin-bottom: 2rem;
+  padding: 0 0.5rem 0.75rem 1.75rem;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+@media (min-width: 576px) {
+  /* Recipe pic */
+  .recipe-media,
+  .flex-intro {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  /* What recipe */
+  .flex-intro {
+    margin-top: 1.625rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0.75rem;
+  }
+  .what-is,
+  .how-to {
+    font-size: 1.5rem;
+    line-height: 1.23;
+  }
+
+  /* Ingredients & Instructions Group */
+  .grid-recipe-guide {
+    display: grid;
+    column-gap: 0.5rem;
+    grid-template-columns: 0.4fr 0.6fr;
+  }
+
+  /* Heading text alignment */
+  .ingr-container > .section-title,
+  .inst-container > .section-title,
+  .notes-container > .section-title {
+    text-align: left;
+  }
+  .ingr-container,
+  .inst-container {
+    padding-top: 1.5rem;
+  }
+  /* Ingredients */
+  .ingr-container {
+    padding-left: 2rem;
+    padding-right: 0;
+  }
+  .ingr-container > .section-title {
+    font-size: 1.5rem;
+    line-height: 1.23;
+  }
+  .ingr-container > .section-subtitle {
+    margin-bottom: 0.875rem;
+  }
+  .ingr-UL {
+    margin-bottom: 1.25rem;
+  }
+  .ingr-LI {
+    font-size: 1.0625rem;
+    line-height: 1.59;
+  }
+
+  /* Instructions */
+  .inst-container {
+    padding-left: 0;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+  }
+  .inst-container > .section-title {
+    font-size: 1.5rem;
+    line-height: 1.23;
+  }
+
+  /* Notes */
+  .notes-container > .section-title,
+  .notes-UL {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .notes-UL {
+    margin-bottom: 0;
+  }
+}

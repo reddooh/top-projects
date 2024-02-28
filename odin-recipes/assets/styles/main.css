@@ -21,17 +21,16 @@ body {
 
 .brand-text {
   font-family: "Caesar Dressing", Verdana, sans-serif, system-ui;
-  font-weight: 400;
   font-style: normal;
+  font-weight: 400;
   font-size: 2.5rem;
 }
 
 .heading-title,
-.card-title,
-.section-title {
+.card-title {
   font-family: "Inter OVR", "Space Grotesk", Helvetica, sans-serif;
-  font-weight: 600;
   font-style: normal;
+  font-weight: 600;
 }
 
 .title-size {
@@ -43,8 +42,8 @@ body {
 .heading-subtitle,
 .flex-nav-menu {
   font-family: Inter, Helvetica, sans-serif;
-  font-weight: 400;
   font-style: normal;
+  font-weight: 400;
 }
 
 .subtitle-size {
@@ -69,8 +68,8 @@ body {
 .card-category,
 .card-author {
   font-family: Inter, Helvetica, sans-serif;
-  font-weight: bold;
   font-style: normal;
+  font-weight: bold;
   text-transform: uppercase;
   font-size: 0.75rem;
   letter-spacing: 2px;
