@@ -101,7 +101,7 @@ h2, p,
 
 /* Make ingredient subheading & bullet counter bold */
 .ingr-container > .section-subtitle,
-.inst-LI::marker, {
+.inst-LI::marker {
   font-weight: bold;
   color: rgb(51, 51, 51);
 }
