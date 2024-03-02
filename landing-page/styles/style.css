@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #1f2937;
+  background: #f9faf8;
+}
+
+header,
+footer {
+  color: #f9faf8;
+  background: #1f2937;
+}
+
+.logo {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+.hero {
+  font-size: 48px;
+  color: #f9faf8;
+}
+
+.hero-media-tmp, .hero-sub, .nav-link {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.quote-section, .illus-head {
+  font-size: 36px;
+  color: #1f2937;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-extra-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.font-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.hero-right {
+  background: #e5e7eb;
+}
+
+.hero-media-tmp {
+  color: #f9faf8;
+}
+
+.quote-section {
+  background: #e5e7eb;
+}
+
+.quote-by {
+  font-size: 24px;
+}
+
+.flex-action {
+  color: #fff;
+  background: #3882f6;
+}
+
+.action {
+  font-size: 22px;
+}
+
+.action-sub {
+  font-size: 18px;
+}
+
+.hero-btn,
+.action-btn {
+  font-size: 18px;
+  background: #3882f6;
+}
+.hero-btn a,
+.action-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+.bot-footer {
+  margin-top: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

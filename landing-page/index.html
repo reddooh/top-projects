@@ -5,92 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="flex-doc">
 
 <header>
-  <nav>
-    <span>Header Logo</span>
+  <nav class="flex-navbar">
+    <span class="logo">Header Logo</span>
 
-    <div>
+    <div class="flex-menu-links">
       <span>
-        <a href="">header link one</a>
+        <a class="nav-link" href="">header link one</a>
       </span>
       <span>
-        <a href="">header link two</a>
+        <a class="nav-link" href="">header link two</a>
       </span>
       <span>
-        <a href="">header link three</a>
+        <a class="nav-link" href="">header link three</a>
       </span>
     </div>
   </nav>
 
-  <div>
-    <div>
-      <span>This website is awesome</span>
-      <span>This website has some subtext that goes here under the main title.
+  <div class="flex-hero">
+    <section class="hero-left">
+      <span class="hero font-extra-bold">This website is awesome</span>
+      <span class="hero-sub">This website has some subtext that goes here under the main title.
       it's a smaller font and the color is lower contrast.</span>
-      <div>
+      <div class="hero-btn font-extra-bold">
         <a href="">Sign up</a>
       </div>
-    </div>
+    </section>
 
-    <div>
-      <span>this is a placeholder for an image</span>
-    </div>
+    <section class="hero-right">
+      <span class="hero-media-tmp">this is a placeholder for an image</span>
+    </section>
   </div>
 </header>
 
-<div>
-  <span>Some random information.</span>
+<section class="illus">
+  <span class="illus-head font-extra-bold">Some random information.</span>
 
-  <div>
-    <div>
-      <div>placeholder</div>
-      <span>this is some subtext under an illustration or image</span>
+  <div class="flex-illus-cards">
+    <div class="illus-card">
+      <div class="illus-media">placeholder</div>
+      <span class="illus-sub">this is some subtext under an illustration or image</span>
     </div>
-    <div>
-      <div>placeholder</div>
-      <span>this is some subtext under an illustration or image</span>
+    <div class="illus-card">
+      <div class="illus-media">placeholder</div>
+      <span class="illus-sub">this is some subtext under an illustration or image</span>
     </div>
-    <div>
-      <div>placeholder</div>
-      <span>this is some subtext under an illustration or image</span>
+    <div class="illus-card">
+      <div class="illus-media">placeholder</div>
+      <span class="illus-sub">this is some subtext under an illustration or image</span>
     </div>
-    <div>
-      <div>placeholder</div>
-      <span>this is some subtext under an illustration or image</span>
+    <div class="illus-card">
+      <div class="illus-media">placeholder</div>
+      <span class="illus-sub">this is some subtext under an illustration or image</span>
     </div>
   </div>
-</div>
+</section>
 
-<div>
-  <div>
-    <span>This is an inspiring quote, or a testimonial from a customer.
+<section class="quote-section">
+  <div class="quote-container">
+    <span class="quote font-light-italic">This is an inspiring quote, or a testimonial from a customer.
     Maybe it's just filling up space, or maybe people will actually read it.
     Who knows? All I know is that it looks nice.</span>
-    <span>-Thor, God of Thunder</span>
+    <span class="quote-by font-extra-bold">-Thor, God of Thunder</span>
   </div>
-</div>
+</section>
 
-<div>
-  <div>
-    <span>Call to action! It's time!</span>
-    <span>Sign up for our product by clicking that button right over there!</span>
+<section class="flex-action">
+  <div class="flex-action">
+    <div>
+      <span class="action font-extra-bold">Call to action! It's time!</span>
+      <span class="action-sub">Sign up for our product by clicking that button right over there!</span>
+    </div>
+
+    <div class="action-btn font-extra-bold">
+      <a href="">Sign up</a>
+    </div>
   </div>
+</section>
 
-  <div>
-    <a href="">Sign up</a>
-  </div>
-</div>
-
-<footer>
+<footer class="bot-footer">
   <span>Copyright © The Odin Project 2024</span>
 </footer>
-
 
   </body>
 </html>

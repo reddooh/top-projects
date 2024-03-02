@@ -1,0 +1,122 @@
+$blueish-dark: #1f2937;
+$light: #f9faf8;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  @extend %font-regular;
+  color: $blueish-dark;
+  background: $light;
+}
+header,
+footer {
+  color: $light;
+  background: $blueish-dark;
+}
+
+%logo-text {
+  font-size: 24px;
+  color: #f9faf8;
+}
+%hero-text {
+  font-size: 48px;
+  color: #f9faf8;
+}
+%hero-subtext {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+%illus-quote-text {
+  font-size: 36px;
+  color: #1f2937;
+}
+$blue: #3882f6;
+$gray: #e5e7eb;
+$white: #fff;
+$fsz-24: 24px;
+$fsz-22: 22px;
+$fsz-18: 18px;
+$fsz-16: 16px;
+%font-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.font-extra-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.font-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.logo {
+  @extend %logo-text;
+}
+.nav-link {
+  @extend %hero-subtext;
+  text-decoration: none;
+}
+
+.hero {
+  @extend %hero-text;
+}
+.hero-sub {
+  @extend %hero-subtext;
+}
+.hero-right {
+  background: $gray;
+}
+.hero-media-tmp {
+  @extend %hero-subtext;
+  color: $light;
+}
+
+.illus-head {
+  @extend %illus-quote-text;
+}
+
+.quote-section {
+  background: $gray;
+  @extend %illus-quote-text;
+}
+.quote-by {
+  font-size: $fsz-24;
+}
+
+.flex-action {
+  color: $white;
+  background: $blue;
+}
+.action {
+  font-size: $fsz-22;
+}
+.action-sub {
+  font-size: $fsz-18;
+}
+.hero-btn,
+.action-btn {
+  font-size: $fsz-18;
+  background: $blue;
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+.bot-footer {
+  margin-top: auto;
+}
