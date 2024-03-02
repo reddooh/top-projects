@@ -36,6 +36,7 @@ footer {
 }
 $blue: #3882f6;
 $gray: #e5e7eb;
+$gray-50: #6e757f;
 $white: #fff;
 $fsz-24: 24px;
 $fsz-22: 22px;
@@ -44,6 +45,11 @@ $fsz-16: 16px;
 %font-regular {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  font-style: normal;
+}
+.font-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   font-style: normal;
 }
 .font-extra-bold {
@@ -72,7 +78,7 @@ $fsz-16: 16px;
   @extend %hero-subtext;
 }
 .hero-right {
-  background: $gray;
+  background-color: $gray-50;
 }
 .hero-media-tmp {
   @extend %hero-subtext;
@@ -91,24 +97,16 @@ $fsz-16: 16px;
   font-size: $fsz-24;
 }
 
-.flex-action {
-  color: $white;
+.flex-action-container {
   background: $blue;
 }
 .action {
   font-size: $fsz-22;
+  color: $white;
 }
 .action-sub {
   font-size: $fsz-18;
-}
-.hero-btn,
-.action-btn {
-  font-size: $fsz-18;
-  background: $blue;
-  a {
-    color: $white;
-    text-decoration: none;
-  }
+  color: $light;
 }
 
 body {
@@ -116,7 +114,130 @@ body {
   flex-direction: column;
   min-height: 100vh;
   min-height: 100svh;
+  > * {
+    // padding: 0 8rem;
+  }
 }
 .bot-footer {
   margin-top: auto;
+}
+
+.flex-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+}
+.flex-menu-links {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+  justify-content: center;
+}
+
+.flex-hero {
+  display: flex;
+  justify-content: center;
+  > * {
+    min-width: 50%;
+  }
+}
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.hero-btn {
+  margin-top: 0.75rem;
+}
+.hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-illus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex-illus-card-container {
+  display: flex;
+  justify-content: center;
+  > * {
+    min-width: 25%;
+  }
+}
+.illus-card {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.illus-media {
+  background-color: $white;
+  border-radius: 15px;
+  border: 4px solid $blue;
+  width: 150px;
+  height: 150px;
+}
+.illus-sub {
+  text-align: center; // add this for flex centering to work on container
+  // text-align-last: center;
+}
+
+.quote-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quote-container {
+  width: 790px;
+  display: flex;
+  flex-direction: column;
+}
+.quote-by {
+  align-self: start;
+  // text-align: left;
+}
+.quote-by {
+  align-self: end;
+  // text-align: right;
+}
+
+.flex-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-action-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-action-right {
+  display: flex;
+  flex-direction: column;
+}
+.action-btn {
+  border: 2px solid $white;
+}
+.hero-btn,
+.action-btn {
+  font-size: $fsz-18;
+  background: $blue;
+  width: max-content;
+  height: max-content;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.bot-footer {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 0;
 }

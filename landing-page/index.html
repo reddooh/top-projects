@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
   </head>
   <body class="flex-doc">
 
 <header>
   <nav class="flex-navbar">
-    <span class="logo">Header Logo</span>
+    <span class="logo font-bold">Header Logo</span>
 
     <div class="flex-menu-links">
       <span>
@@ -34,8 +34,10 @@
       <span class="hero font-extra-bold">This website is awesome</span>
       <span class="hero-sub">This website has some subtext that goes here under the main title.
       it's a smaller font and the color is lower contrast.</span>
-      <div class="hero-btn font-extra-bold">
-        <a href="">Sign up</a>
+      <div class="btn-container">
+        <div class="hero-btn font-bold">
+          <a href="">Sign up</a>
+        </div>
       </div>
     </section>
 
@@ -45,24 +47,24 @@
   </div>
 </header>
 
-<section class="illus">
+<section class="flex-illus">
   <span class="illus-head font-extra-bold">Some random information.</span>
 
-  <div class="flex-illus-cards">
+  <div class="flex-illus-card-container">
     <div class="illus-card">
-      <div class="illus-media">placeholder</div>
+      <div class="illus-media"></div>
       <span class="illus-sub">this is some subtext under an illustration or image</span>
     </div>
     <div class="illus-card">
-      <div class="illus-media">placeholder</div>
+      <div class="illus-media"></div>
       <span class="illus-sub">this is some subtext under an illustration or image</span>
     </div>
     <div class="illus-card">
-      <div class="illus-media">placeholder</div>
+      <div class="illus-media"></div>
       <span class="illus-sub">this is some subtext under an illustration or image</span>
     </div>
     <div class="illus-card">
-      <div class="illus-media">placeholder</div>
+      <div class="illus-media"></div>
       <span class="illus-sub">this is some subtext under an illustration or image</span>
     </div>
   </div>
@@ -78,13 +80,13 @@
 </section>
 
 <section class="flex-action">
-  <div class="flex-action">
-    <div>
-      <span class="action font-extra-bold">Call to action! It's time!</span>
+  <div class="flex-action-container">
+    <div class="flex-action-right">
+      <span class="action font-bold">Call to action! It's time!</span>
       <span class="action-sub">Sign up for our product by clicking that button right over there!</span>
     </div>
 
-    <div class="action-btn font-extra-bold">
+    <div class="action-btn font-bold">
       <a href="">Sign up</a>
     </div>
   </div>
