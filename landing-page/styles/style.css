@@ -7,8 +7,6 @@
 body {
   margin: 0;
   padding: 0;
-  color: #1f2937;
-  background: #f9faf8;
 }
 
 header,
@@ -101,30 +99,33 @@ body {
   min-height: 100vh;
   min-height: 100svh;
 }
-.bot-footer {
-  margin-top: auto;
-}
 
 .flex-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.75rem 0;
+  margin-bottom: 4.5rem;
 }
 
 .flex-menu-links {
   display: flex;
-  gap: 1rem;
-  padding: 0.5rem;
+  gap: 1.5rem;
+  padding: 0.5rem 0 0.5rem 0.5rem;
   justify-content: center;
 }
 
 .flex-hero {
   display: flex;
   justify-content: center;
+  margin-bottom: 7rem;
 }
-.flex-hero > * {
-  min-width: 50%;
+.flex-hero > .hero-left {
+  min-width: 49%;
+  padding-right: 1.5rem;
+}
+.flex-hero > .hero-right {
+  min-width: 51%;
 }
 
 .hero-left {
@@ -143,36 +144,51 @@ body {
   align-items: center;
 }
 
+.hero-media-tmp {
+  color: #fff;
+}
+
 .flex-illus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 2.35rem;
+  margin-top: 2rem;
+  margin-bottom: 5.5rem;
 }
 
 .flex-illus-card-container {
   display: flex;
   justify-content: center;
+  gap: 1.35rem;
 }
 .flex-illus-card-container > * {
   min-width: 25%;
 }
 
-.illus-card {
+.illus-card,
+.illus-media,
+.illus-sub {
   width: 150px;
+}
+
+.illus-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .illus-media {
+  height: 150px;
   background-color: #fff;
   border-radius: 15px;
   border: 4px solid #3882f6;
-  width: 150px;
-  height: 150px;
 }
 
 .illus-sub {
+  margin-top: 0.35rem;
   text-align: center;
 }
 
@@ -186,6 +202,8 @@ body {
   width: 790px;
   display: flex;
   flex-direction: column;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 .quote-by {
@@ -203,9 +221,14 @@ body {
 }
 
 .flex-action-container {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  padding: 3rem 6rem;
+  border-radius: 0.5rem;
 }
 
 .flex-action-right {
@@ -235,7 +258,12 @@ body {
 .bot-footer {
   display: flex;
   justify-content: center;
-  padding: 2.5rem 0;
+  padding: 2.5rem 10rem;
+  margin-top: auto;
+}
+
+body > * {
+  padding: 0 10rem;
 }
 
 /*# sourceMappingURL=style.css.map */
