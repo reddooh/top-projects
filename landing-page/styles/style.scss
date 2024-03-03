@@ -34,7 +34,6 @@ footer {
 }
 $blue: #3882f6;
 $gray: #e5e7eb;
-$gray-50: #6e757f;
 $white: #fff;
 $fsz-24: 24px;
 $fsz-22: 22px;
@@ -76,7 +75,7 @@ $fsz-16: 16px;
   @extend %hero-subtext;
 }
 .hero-right {
-  background-color: $gray-50;
+  background-color: rgba($gray, .4);
 }
 .hero-media-tmp {
   @extend %hero-subtext;
